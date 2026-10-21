@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Alpamys Adilbaev — Keimyung University student, faculty representative, volunteer and community builder based in Daegu, South Korea.">
+  <meta name="theme-color" content="#0c0c0e">
+  <meta property="og:title" content="Alpamys Adilbaev — Portfolio">
+  <meta property="og:description" content="Building bridges between people, cultures and ideas.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <title>Alpamys Adilbaev — Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6a3d'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='700' font-size='30' fill='%230c0c0e'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');try{const t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="#top" class="logo" aria-label="Alpamys Adilbaev — home">alpamys<span>.</span></a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link" data-i18n="nav.about">About</a></li>
+          <li><a href="#experience" class="nav__link" data-i18n="nav.experience">Experience</a></li>
+          <li><a href="#community" class="nav__link" data-i18n="nav.community">Community</a></li>
+          <li><a href="#global" class="nav__link" data-i18n="nav.global">Global</a></li>
+          <li><a href="#recognition" class="nav__link" data-i18n="nav.recognition">Recognition</a></li>
+          <li><a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--accent nav__cta" data-i18n="nav.cta">Let’s talk <span aria-hidden="true">→</span></a>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Language switcher -->
+        <div class="lang" id="lang">
+          <button class="lang__btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" aria-label="Change language">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg>
+            <span id="langCurrent">EN</span>
+          </button>
+          <ul class="lang__menu" id="langMenu" role="menu">
+            <li><button role="menuitemradio" data-lang="en" lang="en">English <span>EN</span></button></li>
+            <li><button role="menuitemradio" data-lang="ko" lang="ko">한국어 <span>KO</span></button></li>
+            <li><button role="menuitemradio" data-lang="ru" lang="ru">Русский <span>RU</span></button></li>
+            <li><button role="menuitemradio" data-lang="kk" lang="kk">Қазақша <span>KZ</span></button></li>
+            <li><button role="menuitemradio" data-lang="uz" lang="uz">O‘zbekcha <span>UZ</span></button></li>
+          </ul>
+        </div>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle light / dark theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"/></svg>
+        </button>
+        <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero container" id="top">
+      <div class="hero__text">
+        <p class="status reveal"><span class="pulse" aria-hidden="true"></span> <span data-i18n="hero.status">Open to meaningful collaborations</span></p>
+        <h1 class="hero__title reveal" data-i18n="hero.title">Hi, I’m Alpamys —<br>building <em>bridges</em> between people, cultures &amp; ideas.</h1>
+        <p class="hero__lead reveal" data-i18n="hero.lead">A globally minded student at <strong>Keimyung University</strong> in South Korea. Faculty representative, volunteer and community builder — with a growing interest in technology.</p>
+        <div class="hero__cta reveal">
+          <a href="#contact" class="btn btn--accent" data-i18n="hero.cta">Get in touch <span aria-hidden="true">→</span></a>
+          <a href="https://www.linkedin.com/in/alpamys-adilbaev/" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+        <ul class="hero__facts reveal">
+          <li><span class="mono" data-i18n="facts.based">Based in</span><span data-i18n="facts.basedV">Daegu, South Korea</span></li>
+          <li><span class="mono" data-i18n="facts.study">Studying at</span><span data-i18n="facts.studyV">Keimyung University</span></li>
+          <li><span class="mono" data-i18n="facts.speaks">Speaks</span><span data-i18n="facts.speaksV">5 languages</span></li>
+        </ul>
+      </div>
+
+      <figure class="hero__photo reveal">
+        <div class="photo-frame">
+          <img src="assets/profile.jpg" width="900" height="1200" alt="Alpamys Adilbaev representing the Republic of Kazakhstan at the Gyeongbuk Global Human Resources Forum" fetchpriority="high">
+        </div>
+        <figcaption class="photo-badge">
+          <span class="photo-badge__flag" aria-hidden="true"><svg viewBox="0 0 36 24"><rect width="36" height="24" fill="#00afca"/><circle cx="19" cy="11" r="4.2" fill="#fec50c"/><g stroke="#fec50c" stroke-width="1.1"><path d="M19 4.5v-1.6M19 17.5v1.6M12.5 11h-1.6M25.5 11h1.6M14.4 6.4l-1.1-1.1M23.6 15.6l1.1 1.1M14.4 15.6l-1.1 1.1M23.6 6.4l1.1-1.1"/></g><path d="M8 18c3 1.5 19 1.5 22 0" stroke="#fec50c" stroke-width="1.2" fill="none"/><rect x="2.5" y="2" width="1.6" height="20" fill="#fec50c" opacity=".85"/></svg></span>
+          <span><strong data-i18n="badge.title">Representing Kazakhstan</strong><small data-i18n="badge.sub">Gyeongbuk Global HR Forum · 2026</small></span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span data-i18n="mq.1">Community</span><i>✦</i><span data-i18n="mq.2">Leadership</span><i>✦</i><span data-i18n="mq.3">Volunteering</span><i>✦</i><span data-i18n="mq.4">International exchange</span><i>✦</i><span data-i18n="mq.5">Diplomacy</span><i>✦</i><span data-i18n="mq.6">Technology</span><i>✦</i>
+        <span data-i18n="mq.1">Community</span><i>✦</i><span data-i18n="mq.2">Leadership</span><i>✦</i><span data-i18n="mq.3">Volunteering</span><i>✦</i><span data-i18n="mq.4">International exchange</span><i>✦</i><span data-i18n="mq.5">Diplomacy</span><i>✦</i><span data-i18n="mq.6">Technology</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section container" id="about">
+      <header class="section__head reveal">
+        <span class="tag" data-i18n="about.tag">01 — About</span>
+        <h2 class="section__title" data-i18n="about.title">Curious by nature, <em>global</em> by outlook.</h2>
+      </header>
+
+      <div class="bento">
+        <article class="card card--about reveal">
+          <p data-i18n="about.p1">I’m a sophomore at <strong>Keimyung University in South Korea</strong>, learning as much from people and communities as I do in class. University life has taken me into student activities, volunteering, representation, and conversations with people from many cultural backgrounds.</p>
+          <p data-i18n="about.p2">I’m interested in technology and programming, but what keeps me moving is the human side: <strong>bringing people together and making space for others to grow.</strong></p>
+        </article>
+
+        <article class="card card--stat reveal">
+          <span class="stat__num">5</span>
+          <span class="stat__label" data-i18n="about.stat1">Languages spoken — from Karakalpak to Korean</span>
+        </article>
+
+        <article class="card card--stat card--accent reveal">
+          <span class="stat__num">Top<sup>100</sup></span>
+          <span class="stat__label" data-i18n="about.stat2">University region ambassador</span>
+        </article>
+
+        <article class="card card--quote reveal">
+          <blockquote data-i18n="about.quote">“Representation is not about being the loudest voice. It’s about helping more voices find their place.”</blockquote>
+        </article>
+
+        <article class="card card--map reveal">
+          <span class="mono" data-i18n="about.journey">Journey</span>
+          <ol class="journey">
+            <li><b data-i18n="j.1">Nukus</b><small data-i18n="j.1s">First work &amp; volunteering</small></li>
+            <li><b data-i18n="j.2">Daegu, Korea</b><small data-i18n="j.2s">Studying at Keimyung</small></li>
+            <li><b data-i18n="j.3">Global stage</b><small data-i18n="j.3s">Representing Kazakhstan</small></li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section container" id="experience">
+      <header class="section__head reveal">
+        <span class="tag" data-i18n="exp.tag">02 — Experience &amp; Leadership</span>
+        <h2 class="section__title" data-i18n="exp.title">Where I’ve learned to make things <em>happen.</em></h2>
+      </header>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__meta"><span class="chip chip--accent" data-i18n="exp.now">Now</span><span class="mono" data-i18n="e1.place">Keimyung University</span></div>
+          <div class="timeline__body">
+            <h3 data-i18n="e1.title">Faculty Representative</h3>
+            <p data-i18n="e1.desc">Taking part in the shared work of student life — listening, communicating, showing up, and helping students stay connected to the activities around them.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__meta"><span class="chip" data-i18n="e2.chip">Sep – Dec 2026</span><span class="mono" data-i18n="e2.place">Gyeongbuk, Korea</span></div>
+          <div class="timeline__body">
+            <h3 data-i18n="e2.title">Social Media Correspondent</h3>
+            <p data-i18n="e2.desc">Appointed by the Gyeongbuk Global Youth Volunteer Corps to promote the corps’ activities and share the values of volunteer service.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__meta"><span class="chip" data-i18n="exp.work">Work</span><span class="mono">IELTS IDP</span></div>
+          <div class="timeline__body">
+            <h3 data-i18n="e3.title">IELTS Invigilator</h3>
+            <p data-i18n="e3.desc">Supported IELTS examination sessions while maintaining professional standards, accuracy and integrity throughout the testing process.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__meta"><span class="chip" data-i18n="exp.work">Work</span><span class="mono" data-i18n="e4.place">Nukus Techno Park</span></div>
+          <div class="timeline__body">
+            <h3 data-i18n="e4.title">Student English Supporter</h3>
+            <p data-i18n="e4.desc">Helped create a welcoming learning environment by supporting students and communicating in English.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__meta"><span class="chip" data-i18n="exp.work">Work</span><span class="mono" data-i18n="e5.place">Stanford LC · Nukus</span></div>
+          <div class="timeline__body">
+            <h3 data-i18n="e5.title">Office Manager</h3>
+            <p data-i18n="e5.desc">Supported the day-to-day rhythm of the office through organization, communication, and dependable coordination.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ COMMUNITY ============ -->
+    <section class="section container" id="community">
+      <header class="section__head reveal">
+        <span class="tag" data-i18n="com.tag">03 — Volunteering</span>
+        <h2 class="section__title" data-i18n="com.title">Showing up for the <em>community.</em></h2>
+        <p class="section__lead" data-i18n="com.lead">From my home country to university life in Korea, volunteering has taught me the value of practical help, teamwork, and being present when people need each other.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card card--project reveal">
+          <div class="card__top"><span class="card__icon" aria-hidden="true">🎓</span><span class="mono" data-i18n="c1.meta">2024 · Nukus, Uzbekistan</span></div>
+          <h3>Top100 Uni Camp 2024</h3>
+          <p class="card__role" data-i18n="c1.role">Volunteer &amp; Ambassador</p>
+          <p data-i18n="c1.desc">Volunteered and served as an ambassador for the governmental Top100 Uni Camp, supporting students exploring higher education and encouraging them to pursue opportunities abroad.</p>
+        </article>
+        <article class="card card--project reveal">
+          <div class="card__top"><span class="card__icon" aria-hidden="true">🤝</span><span class="mono" data-i18n="c2.meta">Karakalpakstan</span></div>
+          <h3 data-i18n="c2.title">Community &amp; Volunteer Initiatives</h3>
+          <p class="card__role" data-i18n="c2.role">Volunteer</p>
+          <p data-i18n="c2.desc">Participated in volunteer organizations and community initiatives focused on supporting young people and contributing to positive social change.</p>
+        </article>
+        <article class="card card--project reveal">
+          <div class="card__top"><span class="card__icon" aria-hidden="true">📣</span><span class="mono" data-i18n="c3.meta">Sep 17 – Dec 31, 2026</span></div>
+          <h3 data-i18n="c3.title">Gyeongbuk Global Youth Volunteer Corps</h3>
+          <p class="card__role" data-i18n="c3.role">Social Media Correspondent</p>
+          <p data-i18n="c3.desc">Promoting the corps’ activities and sharing the values of volunteer service with a wider audience.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ GLOBAL ============ -->
+    <section class="section section--invert" id="global">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="tag" data-i18n="glob.tag">04 — International Experience</span>
+          <h2 class="section__title" data-i18n="glob.title">Learning to listen across <em>cultures.</em></h2>
+          <p class="section__lead" data-i18n="glob.lead">International programs have given me the chance to learn alongside people with different perspectives — and to communicate with more curiosity, openness, and care.</p>
+        </header>
+
+        <div class="feature-list">
+          <article class="feature reveal">
+            <span class="feature__date" data-i18n="g1.date">Oct 8–9 <br>2026</span>
+            <div>
+              <h3 data-i18n="g1.title">Gyeongbuk Global Human Resources Forum</h3>
+              <p data-i18n="g1.desc">Participated as an official representative of the Republic of Kazakhstan.</p>
+            </div>
+            <span class="chip chip--light" data-i18n="g1.chip">Representative</span>
+          </article>
+          <article class="feature reveal">
+            <span class="feature__date" data-i18n="g2.date">Aug 27 <br>2025</span>
+            <div>
+              <h3 data-i18n="g2.title">APEC University Students Simulation Summit</h3>
+              <p data-i18n="g2.desc">A university-level APEC simulation on global economic and policy issues — negotiations, policy formulation and multilateral dialogue.</p>
+            </div>
+            <span class="chip chip--light" data-i18n="g2.chip">Participant</span>
+          </article>
+        </div>
+
+        <ul class="pillars">
+          <li class="reveal"><b>01</b><span data-i18n="p.1">International programs &amp; exchange</span></li>
+          <li class="reveal"><b>02</b><span data-i18n="p.2">Multicultural teamwork &amp; dialogue</span></li>
+          <li class="reveal"><b>03</b><span data-i18n="p.3">Representing community with openness</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ RECOGNITION ============ -->
+    <section class="section container" id="recognition">
+      <header class="section__head reveal">
+        <span class="tag" data-i18n="rec.tag">05 — Recognition</span>
+        <h2 class="section__title" data-i18n="rec.title">Small beginnings. <em>Big horizons.</em></h2>
+      </header>
+
+      <div class="awards">
+        <article class="award reveal">
+          <span class="award__year">2025</span>
+          <h3 data-i18n="a1.title">APEC Students Summit Korea</h3>
+          <p data-i18n="a1.desc">Certificate of Completion — international simulation focused on diplomacy, negotiations and multilateral dialogue.</p>
+        </article>
+        <article class="award reveal">
+          <span class="award__year">Top 100</span>
+          <h3 data-i18n="a2.title">Top 100 University Region Ambassador</h3>
+          <p data-i18n="a2.desc">A milestone in representing and connecting a wider student community.</p>
+        </article>
+        <article class="award reveal">
+          <span class="award__year">2023</span>
+          <h3 data-i18n="a3.title">2nd Degree — Russian as a Foreign Language</h3>
+          <p data-i18n="a3.desc">Prize-winner of the IV SPbU International Online Olympiad, St. Petersburg State University.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section container" id="skills">
+      <header class="section__head reveal">
+        <span class="tag" data-i18n="sk.tag">06 — What I bring</span>
+        <h2 class="section__title" data-i18n="sk.title">People first. Always <em>learning.</em></h2>
+      </header>
+
+      <div class="skills">
+        <article class="card reveal">
+          <h3 class="mono" data-i18n="sk.people">People</h3>
+          <ul class="chips"><li data-i18n="sk.comm">Communication</li><li data-i18n="sk.team">Teamwork</li><li data-i18n="sk.cb">Community building</li></ul>
+          <h3 class="mono" data-i18n="sk.leadership">Leadership</h3>
+          <ul class="chips"><li data-i18n="sk.rep">Student representation</li><li data-i18n="sk.coord">Coordination</li><li data-i18n="sk.resp">Responsibility</li></ul>
+          <h3 class="mono" data-i18n="sk.tech">Technology</h3>
+          <ul class="chips"><li>Python <small data-i18n="sk.learning">· learning</small></li></ul>
+        </article>
+
+        <article class="card reveal">
+          <h3 class="mono" data-i18n="sk.languages">Languages</h3>
+          <ul class="langs">
+            <li><span data-i18n="lang.ru">Russian</span><em data-i18n="lvl.native">Native</em><i style="--w:100%"></i></li>
+            <li><span data-i18n="lang.kk">Kazakh</span><em data-i18n="lvl.native">Native</em><i style="--w:100%"></i></li>
+            <li><span data-i18n="lang.kaa">Karakalpak</span><em data-i18n="lvl.native">Native</em><i style="--w:100%"></i></li>
+            <li><span data-i18n="lang.en">English</span><em>C1</em><i style="--w:85%"></i></li>
+            <li><span data-i18n="lang.ko">Korean</span><em>B1</em><i style="--w:55%"></i></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section container" id="contact">
+      <div class="contact reveal">
+        <span class="tag" data-i18n="ct.tag">07 — Contact</span>
+        <h2 class="contact__title" data-i18n="ct.title">Let’s make something <em>matter.</em></h2>
+        <p class="section__lead" data-i18n="ct.lead">Whether it’s a project, an event, or just a conversation — my inbox is open.</p>
+
+        <div class="contact__main">
+          <a class="btn btn--accent btn--lg" href="mailto:adilbaevalpamys@gmail.com">adilbaevalpamys@gmail.com</a>
+          <button class="btn btn--ghost btn--lg" id="copyEmail" data-email="adilbaevalpamys@gmail.com" data-i18n="ct.copy">Copy email</button>
+        </div>
+
+        <ul class="contact__grid">
+          <li><span class="mono" data-i18n="ct.student">Student email</span><a href="mailto:5918440@kmu.kr">5918440@kmu.kr</a></li>
+          <li><span class="mono" data-i18n="ct.phone">Phone / WhatsApp</span><a href="tel:+821055539479">+82 10-5553-9479</a></li>
+          <li><span class="mono">LinkedIn</span><a href="https://www.linkedin.com/in/alpamys-adilbaev/" target="_blank" rel="noopener">alpamys-adilbaev ↗</a></li>
+          <li><span class="mono" data-i18n="facts.based">Based in</span><p data-i18n="facts.basedV">Daegu, South Korea</p></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>© <span id="year">2026</span> Alpamys Adilbaev</span>
+    <a href="#top" class="footer__top" data-i18n="footer.top">Back to top ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
